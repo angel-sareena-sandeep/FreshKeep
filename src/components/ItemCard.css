@@ -1,0 +1,94 @@
+.item-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--green-500);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-card--soon {
+  border-left-color: var(--amber-500);
+}
+
+.item-card--expired {
+  border-left-color: var(--red-600);
+}
+
+.item-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.item-card-name {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.item-card-meta {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.item-card-date {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.chip {
+  background: var(--green-100);
+  color: var(--green-700);
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.badge--fresh {
+  background: var(--green-100);
+  color: var(--green-700);
+}
+
+.badge--soon {
+  background: var(--amber-100);
+  color: var(--amber-700);
+}
+
+.badge--expired {
+  background: var(--red-100);
+  color: var(--red-600);
+}
+
+.item-card-delete {
+  align-self: flex-end;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 8px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+.item-card-delete:hover {
+  border-color: var(--red-600);
+  color: var(--red-600);
+}
