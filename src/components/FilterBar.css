@@ -1,0 +1,26 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font: inherit;
+  background: #fff;
+  color: var(--text);
+}
+
+.filter-bar input {
+  flex: 1 1 220px;
+}
+
+.filter-bar input:focus,
+.filter-bar select:focus {
+  outline: 2px solid var(--green-300);
+  border-color: var(--green-500);
+}

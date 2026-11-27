@@ -1,0 +1,45 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.stat-card--total {
+  background: linear-gradient(135deg, var(--green-500), var(--green-700));
+  color: #fff;
+}
+
+.stat-card--total .stat-label {
+  color: #e3f4dc;
+}
+
+.stat-card--fresh .stat-value { color: var(--green-700); }
+.stat-card--soon .stat-value { color: var(--amber-700); }
+.stat-card--expired .stat-value { color: var(--red-600); }
+
+@media (max-width: 700px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
