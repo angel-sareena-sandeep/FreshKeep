@@ -1,0 +1,66 @@
+:root {
+  --bg: #f6faf3;
+  --surface: #ffffff;
+  --border: #dfe8d8;
+  --text: #1f2a1f;
+  --text-muted: #5b6b5b;
+  --shadow: 0 2px 8px rgba(40, 80, 40, 0.07);
+
+  --green-100: #e3f4dc;
+  --green-300: #a5d99a;
+  --green-500: #4caf50;
+  --green-700: #2e7d32;
+  --green-900: #1b4d1f;
+
+  --amber-100: #fff3d6;
+  --amber-500: #f5a623;
+  --amber-700: #9a6200;
+
+  --red-100: #fde4e4;
+  --red-600: #d32f2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+.page-title {
+  margin: 8px 0 20px;
+  font-size: 1.8rem;
+  color: var(--green-900);
+}
+
+.section-title {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+  color: var(--green-900);
+}
+
+.btn-primary {
+  background: var(--green-500);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 16px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--green-700);
+}
