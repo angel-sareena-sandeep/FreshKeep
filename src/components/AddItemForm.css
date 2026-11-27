@@ -1,0 +1,47 @@
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.add-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.add-form input,
+.add-form select {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font: inherit;
+  color: var(--text);
+  background: #fff;
+}
+
+.add-form input:focus,
+.add-form select:focus {
+  outline: 2px solid var(--green-300);
+  border-color: var(--green-500);
+}
+
+.add-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 12px;
+}
+
+.add-form-error {
+  margin: 0;
+  color: var(--red-600);
+  font-size: 0.85rem;
+}
